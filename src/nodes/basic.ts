@@ -51,8 +51,27 @@ export const code_block: NodeSpec = {
   group: NodeGroups.block,
   code: true,
   defining: true,
-  parseDOM: [{ tag: 'pre', preserveWhitespace: 'full' }],
-  toDOM() { return ['pre', ['code', 0]]; },
+  attrs: {
+    lineNumbers: { default: false },
+    language: { default: '' },
+  },
+  parseDOM: [{
+    tag: 'pre',
+    preserveWhitespace: 'full',
+    getAttrs(dom: any) {
+      if (dom.children.length !== 1) return false;
+      if (dom.children[0].tagName !== 'CODE') return false;
+      const codeElement = dom.children[0];
+      return {
+        lineNumbers: codeElement.getAttribute('line-numbers') ?? false,
+        language: codeElement.getAttribute('language') ?? '',
+      };
+    },
+  }],
+  toDOM(node) {
+    const { lineNumbers, language } = node.attrs;
+    return ['pre', ['code', { 'line-numbers': lineNumbers, language }, 0]];
+  },
 };
 
 export const text: NodeSpec = {
