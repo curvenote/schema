@@ -63,14 +63,14 @@ export const code_block: NodeSpec = {
       if (dom.children[0].tagName !== 'CODE') return false;
       const codeElement = dom.children[0];
       return {
-        lineNumbers: codeElement.getAttribute('line-numbers') ?? false,
+        lineNumbers: codeElement.hasAttribute('line-numbers') ?? false,
         language: codeElement.getAttribute('language') ?? '',
       };
     },
   }],
   toDOM(node) {
     const { lineNumbers, language } = node.attrs;
-    return ['pre', ['code', { 'line-numbers': lineNumbers, language }, 0]];
+    return ['pre', ['code', { 'line-numbers': (lineNumbers ? '' : undefined) as any, language }, 0]];
   },
 };
 
