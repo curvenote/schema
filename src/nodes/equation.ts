@@ -1,5 +1,5 @@
 import { NodeGroups, FormatSerialize, MyNodeSpec, NumberedNode } from './types';
-import { latexStatement } from '../serialize/tex/utils';
+import { createLatexStatement } from '../serialize/tex/utils';
 import { getAttr, getNumberedAttrs, getNumberedDefaultAttrs, setNumberedAttrs } from './utils';
 
 export type Attrs = NumberedNode & {
@@ -47,7 +47,7 @@ export const toMarkdown: FormatSerialize = (state, node) => {
   state.closeBlock(node);
 };
 
-export const toTex = latexStatement('equation', (state, node) => {
+export const toTex = createLatexStatement('equation', (state, node) => {
   // TODO: export the label if it isn't inline!
   state.text(node.textContent, false);
 });
