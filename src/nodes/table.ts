@@ -110,9 +110,16 @@ export function renderNodeToLatex(state: MarkdownSerializerState, node: Node<any
         attrs: { colspan },
       } = cell;
       if (colspan > 1) state.write(`\\multicolumn{${colspan}}{c}{`);
+
       cell.content.forEach((content) => {
         // NOTE: this doesn't work well for multi-paragraphs
+        if (content.type.name === 'equation') {
+          state.write('\\(\\displaystyle ');
+        }
         state.renderInline(content);
+        if (content.type.name === 'equation') {
+          state.write(' \\)');
+        }
       });
       if (colspan > 1) state.write('}');
       if (i < rowContent.childCount - 1) {
