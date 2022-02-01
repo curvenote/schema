@@ -9,6 +9,14 @@ export enum CalloutKinds {
   'info' = 'info',
   'warning' = 'warning',
   'danger' = 'danger',
+  'note' = 'note',
+  'important' = 'important',
+  'admonition' = 'admonition',
+  'caution' = 'caution',
+  'error' = 'error',
+  'hint' = 'hint',
+  'tip' = 'tip',
+  'attention' = 'attention',
 }
 
 export type Attrs = {
@@ -33,6 +41,14 @@ const callout: NodeSpec = {
         if (dom.classList.contains(CalloutKinds.info)) return { kind: CalloutKinds.info };
         if (dom.classList.contains(CalloutKinds.warning)) return { kind: CalloutKinds.warning };
         if (dom.classList.contains(CalloutKinds.danger)) return { kind: CalloutKinds.danger };
+        if (dom.classList.contains(CalloutKinds.note)) return { kind: CalloutKinds.info };
+        if (dom.classList.contains(CalloutKinds.important)) return { kind: CalloutKinds.info };
+        if (dom.classList.contains(CalloutKinds.admonition)) return { kind: CalloutKinds.warning };
+        if (dom.classList.contains(CalloutKinds.caution)) return { kind: CalloutKinds.danger };
+        if (dom.classList.contains(CalloutKinds.error)) return { kind: CalloutKinds.warning };
+        if (dom.classList.contains(CalloutKinds.hint)) return { kind: CalloutKinds.info };
+        if (dom.classList.contains(CalloutKinds.tip)) return { kind: CalloutKinds.info };
+        if (dom.classList.contains(CalloutKinds.attention)) return { kind: CalloutKinds.warning };
         return { kind: CalloutKinds.info };
       },
       // aside is also parsed, and this is higher priority
@@ -51,12 +67,8 @@ function calloutKindToAdmonition(kind: CalloutKinds): string {
       return 'important';
     case CalloutKinds.info:
       return 'important';
-    case CalloutKinds.warning:
-      return 'warning';
-    case CalloutKinds.danger:
-      return 'danger';
     default:
-      return 'note';
+      return kind.toString();
   }
 }
 
