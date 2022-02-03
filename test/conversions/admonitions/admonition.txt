@@ -1,0 +1,29 @@
+admonition block
+
++++ curvenote
+type: doc
+content:
+  - type: callout
+    attrs:
+      kind: admonition
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: This is an admonition.
+
++++ myst
+```{admonition}
+This is an admonition.
+```
+
++++ html export
+<aside class="callout admonition"><p>This is an admonition.</p></aside>
+
++++ text export
+This is an admonition.
+
++++ tex export
+\begin{callout}
+  This is an admonition.
+\end{callout}

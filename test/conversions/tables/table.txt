@@ -1,0 +1,123 @@
+plain table
+
++++ curvenote
+type: doc
+content:
+  - type: table
+    content:
+      - type: table_row
+        content:
+          - type: table_header
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              - type: paragraph
+                content:
+                  - type: text
+                    text: Training
+          - type: table_header
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              - type: paragraph
+                content:
+                  - type: text
+                    text: Validation
+      - type: table_row
+        content:
+          - type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              - type: paragraph
+                content:
+                  - type: text
+                    text: '0'
+          - type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              - type: paragraph
+                content:
+                  - type: text
+                    text: '5'
+      - type: table_row
+        content:
+          - type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              - type: paragraph
+                content:
+                  - type: text
+                    text: '13720'
+          - type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              - type: paragraph
+                content:
+                  - type: text
+                    text: '2744'
+  - type: paragraph
+    content:
+      - type: text
+        text: trailing paragraph
+
++++ myst export
+```{list-table}:header-rows: 1
+
+* - Training
+  - Validation
+* - 0
+  - 5
+* - 13720
+  - 2744
+```
+
+trailing paragraph
+
++++ html
+<table><tbody>
+<tr><th><p>Training</p></th><th><p>Validation</p></th></tr>
+<tr><td><p>0</p></td><td><p>5</p></td></tr>
+<tr><td><p>13720</p></td><td><p>2744</p></td></tr>
+</tbody></table><p>trailing paragraph</p>
+
++++ text export
+|  Training | Validation |
+|---|---|
+|  0 | 5 |
+|  13720 | 2744 |
+
+trailing paragraph
+
++++ tex export
+\begin{tabular}{*{2}{c}}
+  \hline
+  Training & Validation \\
+  \hline
+  0 & 5 \\
+  13720 & 2744 \\
+  \hline
+\end{tabular}
+
+trailing paragraph

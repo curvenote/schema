@@ -1,0 +1,29 @@
+note block
+
++++ curvenote
+type: doc
+content:
+  - type: callout
+    attrs:
+      kind: note
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: This is a note.
+            
++++ myst
+```{note}
+This is a note.
+```
+
++++ html export
+<aside class="callout note"><p>This is a note.</p></aside>
+
++++ text export
+This is a note.
+
++++ tex export
+\begin{callout}
+  This is a note.
+\end{callout}

@@ -1,0 +1,38 @@
+code block
+
++++ curvenote
+type: doc
+content:
+  - type: code_block
+    attrs:
+      id: null
+      label: null
+      numbered: false
+      language: null
+      linenumbers: false
+      title: ''
+    content:
+      - type: text
+        text: |-
+          import numpy as np
+          np.array([1, 2, 3])
+
++++ myst
+```
+import numpy as np
+np.array([1, 2, 3])
+```
+
++++ html
+<pre title=""><code>import numpy as np
+np.array([1, 2, 3])</code></pre>
+
++++ text export
+import numpy as np
+np.array([1, 2, 3])
+
++++ tex export
+\begin{verbatim}
+  import numpy as np
+  np.array([1, 2, 3])
+\end{verbatim}

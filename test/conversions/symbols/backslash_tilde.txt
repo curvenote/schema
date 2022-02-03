@@ -1,0 +1,21 @@
+backslash / tilde / bracket
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: Hello \ ~}
+            
++++ myst
+Hello \\ \~}
+
++++ html
+<p>Hello \ ~}</p>
+
++++ text export
+Hello \ ~}
+
++++ tex export
+Hello {\textbackslash}~{\textasciitilde}\}

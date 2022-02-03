@@ -1,0 +1,34 @@
+overlap underline/bold
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: 'strange - '
+      - type: text
+        marks:
+          - type: underline
+        text: 'hello '
+      - type: text
+        marks:
+          - type: strong
+          - type: underline
+        text: fri
+      - type: text
+        marks:
+          - type: underline
+        text: end!
+
++++ myst export
+strange - {u}`hello `**{u}`fri`**{u}`end!`
+
++++ html
+<p>strange - <u>hello </u><strong><u>fri</u></strong><u>end!</u></p>
+
++++ text export
+strange - hello friend!
+
++++ tex export
+strange - \uline{hello \textbf{fri}end!}

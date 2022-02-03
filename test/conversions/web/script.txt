@@ -1,0 +1,9 @@
+scripts are ignored
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+
++++ html import
+<script>alert("hi");</script>

@@ -1,0 +1,54 @@
+unordered list
+
++++ curvenote
+type: doc
+content:
+  - type: bullet_list
+    content:
+      - type: list_item
+        content:
+          - type: paragraph
+            content:
+              - type: text
+                text: point 1
+      - type: list_item
+        content:
+          - type: paragraph
+            content:
+              - type: text
+                text: point 2
+      - type: list_item
+        content:
+          - type: paragraph
+            content:
+              - type: text
+                text: point 3
+
++++ myst
+* point 1
+* point 2
+* point 3
+
++++ myst import
+- point 1
+- point 2
+- point 3
+
++++ html
+<ul>
+<li><p>point 1</p></li>
+<li><p>point 2</p></li>
+<li><p>point 3</p></li>
+</ul>
+
++++ text export
+* point 1
+* point 2
+* point 3
+
++++ tex export
+\begin{itemize}
+  \item point 1
+  \item point 2
+  \item point 3
+\end{itemize}

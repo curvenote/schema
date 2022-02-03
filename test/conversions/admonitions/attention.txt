@@ -1,0 +1,29 @@
+attention block
+
++++ curvenote
+type: doc
+content:
+  - type: callout
+    attrs:
+      kind: attention
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: This is an attention.
+            
++++ myst
+```{attention}
+This is an attention.
+```
+
++++ html export
+<aside class="callout attention"><p>This is an attention.</p></aside>
+
++++ text export
+This is an attention.
+
++++ tex export
+\begin{callout}
+  This is an attention.
+\end{callout}

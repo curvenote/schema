@@ -1,0 +1,29 @@
+warning block
+
++++ curvenote
+type: doc
+content:
+  - type: callout
+    attrs:
+      kind: warning
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: This is a warning.
+            
++++ myst
+```{warning}
+This is a warning.
+```
+
++++ html
+<aside class="callout warning"><p>This is a warning.</p></aside>
+
++++ text export
+This is a warning.
+
++++ tex export
+\begin{callout}
+  This is a warning.
+\end{callout}

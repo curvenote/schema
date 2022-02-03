@@ -1,0 +1,25 @@
+bold
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: 'important - '
+      - type: text
+        marks:
+          - type: strong
+        text: hello!
+
++++ myst
+important - **hello!**
+
++++ html
+<p>important - <strong>hello!</strong></p>
+
++++ text export
+important - hello!
+
++++ tex export
+important - \textbf{hello!}

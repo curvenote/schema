@@ -1,0 +1,21 @@
+simple paragraph
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: hello!
+
++++ myst
+hello!
+
++++ html
+<p>hello!</p>
+
++++ text export
+hello!
+
++++ tex export
+hello!

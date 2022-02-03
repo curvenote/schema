@@ -1,0 +1,28 @@
+dynamic
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: dynamic
+        attrs:
+          value: ''
+          valueFunction: v
+          changeFunction: '{v: value}'
+          format: .0f
+          min: '0'
+          minFunction: ''
+          max: '10'
+          maxFunction: ''
+          step: '0.1'
+          stepFunction: ''
+
++++ myst export
+{dynamic}`<:value="v" :change="{v: value}" format=".0f" max="10" step="0.1">`
+
++++ html
+<p><r-dynamic :value="v" :change="{v: value}" format=".0f" min="0" max="10" step="0.1"></r-dynamic></p>
+
++++ text export
+{dynamic}`<:value="v" :change="{v: value}" format=".0f" max="10" step="0.1">`

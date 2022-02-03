@@ -1,0 +1,29 @@
+callout
+
++++ curvenote
+type: doc
+content:
+  - type: callout
+    attrs:
+      kind: warning
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: hello!
+
++++ myst
+```{warning}
+hello!
+```
+
++++ html
+<aside class="callout warning"><p>hello!</p></aside>
+
++++ text export
+hello!
+
++++ tex export
+\begin{callout}
+  hello!
+\end{callout}

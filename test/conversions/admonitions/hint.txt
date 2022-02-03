@@ -1,0 +1,29 @@
+hint block
+
++++ curvenote
+type: doc
+content:
+  - type: callout
+    attrs:
+      kind: hint
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: This is a hint.
+            
++++ myst
+```{hint}
+This is a hint.
+```
+
++++ html export
+<aside class="callout hint"><p>This is a hint.</p></aside>
+
++++ text export
+This is a hint.
+
++++ tex export
+\begin{callout}
+  This is a hint.
+\end{callout}

@@ -1,0 +1,26 @@
+amsmath
+
++++ curvenote
+type: doc
+content:
+  - type: equation
+    attrs:
+      id: null
+      label: null
+      numbered: false
+      title: ''
+    content:
+      - type: text
+        text: \begin{equation}y = mx + b\end{equation}
+
++++ myst
+\begin{equation}y = mx + b\end{equation}
+
++++ html
+<r-equation>\begin{equation}y = mx + b\end{equation}</r-equation>
+
++++ text export
+\begin{equation}y = mx + b\end{equation}
+
++++ tex export
+\begin{equation}y = mx + b\end{equation}

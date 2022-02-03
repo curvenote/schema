@@ -1,0 +1,51 @@
+headings
+
++++ curvenote
+type: doc
+content:
+  - type: heading
+    attrs:
+      id: null
+      label: null
+      numbered: false
+      level: 1
+    content:
+      - type: text
+        text: one
+  - type: heading
+    attrs:
+      id: null
+      label: null
+      numbered: false
+      level: 2
+    content:
+      - type: text
+        text: two
+  - type: paragraph
+    content:
+      - type: text
+        text: three
+
++++ myst
+# one
+
+## two
+
+three
+
++++ html
+<h1>one</h1><h2>two</h2><p>three</p>
+
++++ text export
+one
+
+two
+
+three
+
++++ tex export
+\section*{one}
+
+\subsection*{two}
+
+three

@@ -1,0 +1,29 @@
+tip block
+
++++ curvenote
+type: doc
+content:
+  - type: callout
+    attrs:
+      kind: tip
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: This is a tip.
+            
++++ myst
+```{tip}
+This is a tip.
+```
+
++++ html export
+<aside class="callout tip"><p>This is a tip.</p></aside>
+
++++ text export
+This is a tip.
+
++++ tex export
+\begin{callout}
+  This is a tip.
+\end{callout}

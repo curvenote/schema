@@ -1,0 +1,23 @@
+symbols in math
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: math
+        content:
+          - type: text
+            text: hi δ ⇔
+
++++ myst
+$hi δ ⇔$
+
++++ html
+<p><r-equation inline="">hi δ ⇔</r-equation></p>
+
++++ text export
+hi δ ⇔
+
++++ tex export
+$hi \delta \Leftrightarrow$

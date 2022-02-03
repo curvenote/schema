@@ -1,0 +1,43 @@
+three paragraphs
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: hello!
+  - type: paragraph
+    content:
+      - type: text
+        text: how are you?
+  - type: paragraph
+    content:
+      - type: text
+        text: good
+        
++++ myst
+hello!
+
+how are you?
+
+good
+
++++ html
+<p>hello!</p>
+<p>how are you?</p>
+<p>good</p>
+
++++ text export
+hello!
+
+how are you?
+
+good
+
++++ tex export
+hello!
+
+how are you?
+
+good

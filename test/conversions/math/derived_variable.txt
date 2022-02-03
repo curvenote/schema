@@ -1,0 +1,23 @@
+derived variable
+
++++ curvenote
+type: doc
+content:
+  - type: variable
+    attrs:
+      name: 'y'
+      value: ''
+      valueFunction: x + 1
+      format: .0f
+
++++ myst export
+```{variable}
+:name: "y"
+:valueFunction: "x + 1"
+:format: ".0f"
+```
+
++++ html
+<r-var name="y" :value="x + 1" format=".0f"></r-var>
+
++++ text export

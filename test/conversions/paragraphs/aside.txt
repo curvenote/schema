@@ -1,0 +1,27 @@
+aside
+
++++ curvenote
+type: doc
+content:
+  - type: aside
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: hello!
+
++++ myst export
+```{margin}
+hello!
+```
+
++++ html
+<aside class="margin"><p>hello!</p></aside>
+
++++ text export
+hello!
+
++++ tex export
+\begin{aside}
+  hello!
+\end{aside}

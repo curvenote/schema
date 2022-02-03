@@ -1,0 +1,28 @@
+subscript
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: H
+      - type: text
+        marks:
+          - type: subscript
+        text: '2'
+      - type: text
+        text: O
+
++++ myst
+H{sub}`2`O
+
++++ html
+<p>H<sub>2</sub>O</p>
+
++++ text export
+H2O
+
++++ tex export
+H\textsubscript{2}O
+  

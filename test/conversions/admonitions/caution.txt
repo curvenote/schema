@@ -1,0 +1,29 @@
+caution block
+
++++ curvenote
+type: doc
+content:
+  - type: callout
+    attrs:
+      kind: caution
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: This is a caution.
+            
++++ myst
+```{caution}
+This is a caution.
+```
+
++++ html export
+<aside class="callout caution"><p>This is a caution.</p></aside>
+
++++ text export
+This is a caution.
+
++++ tex export
+\begin{callout}
+  This is a caution.
+\end{callout}

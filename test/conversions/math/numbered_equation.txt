@@ -1,0 +1,33 @@
+numbered equation
+
++++ curvenote
+type: doc
+content:
+  - type: equation
+    attrs:
+      id: my-equation
+      label: null
+      numbered: true
+      title: ''
+    content:
+      - type: text
+        text: y = mx + b
+
++++ myst export
+```{math}
+:label: my-equation
+
+y = mx + b
+```
+
++++ html
+<r-equation id="my-equation" numbered="">y = mx + b</r-equation>
+
++++ text export
+y = mx + b
+
++++ tex export
+\begin{equation}
+\label{my-equation}
+y = mx + b
+\end{equation}

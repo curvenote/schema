@@ -1,0 +1,29 @@
+important block
+
++++ curvenote
+type: doc
+content:
+  - type: callout
+    attrs:
+      kind: important
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: This is an important.
+
++++ myst
+```{important}
+This is an important.
+```
+
++++ html export
+<aside class="callout important"><p>This is an important.</p></aside>
+
++++ text export
+This is an important.
+
++++ tex export
+\begin{callout}
+  This is an important.
+\end{callout}

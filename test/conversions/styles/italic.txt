@@ -1,0 +1,25 @@
+italic
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: 'interesting - '
+      - type: text
+        marks:
+          - type: em
+        text: hello!
+
++++ myst
+interesting - *hello!*
+
++++ html
+<p>interesting - <em>hello!</em></p>
+
++++ text export
+interesting - hello!
+
++++ tex export
+interesting - \textit{hello!}

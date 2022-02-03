@@ -1,0 +1,25 @@
+block quote
+
++++ curvenote
+type: doc
+content:
+  - type: blockquote
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: hello
+
++++ myst
+> hello
+
++++ html
+<blockquote><p>hello</p></blockquote>
+
++++ text export
+hello
+
++++ tex export
+\begin{quote}
+  hello
+\end{quote}

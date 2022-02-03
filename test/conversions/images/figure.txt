@@ -1,0 +1,55 @@
+figure with caption
+
++++ curvenote
+type: doc
+content:
+  - type: figure
+    attrs:
+      id: my-figure
+      label: null
+      numbered: false
+      align: center
+    content:
+      - type: image
+        attrs:
+          id: null
+          label: null
+          numbered: false
+          src: img.png
+          alt: x
+          title: null
+          width: 70
+          align: center
+          caption: false
+      - type: figcaption
+        attrs:
+          kind: fig
+        content:
+          - type: text
+            text: This is an image caption
+
++++ myst export
+```{figure} img.png
+  :name: my-figure
+
+  This is an image caption
+```
+
++++ html
+<figure id="my-figure" align="center">
+<img src="img.png" align="center" alt="x" width="70%">
+<figcaption kind="fig">This is an image caption</figcaption>
+</figure>
+
++++ text export
+This is an image caption
+
++++ tex export
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.7\linewidth]{img.png}
+
+  \caption*{
+    This is an image caption
+  }
+\end{figure}

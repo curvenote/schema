@@ -1,0 +1,29 @@
+error block
+
++++ curvenote
+type: doc
+content:
+  - type: callout
+    attrs:
+      kind: error
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: This is an error.
+
++++ myst
+```{error}
+This is an error.
+```
+
++++ html export
+<aside class="callout error"><p>This is an error.</p></aside>
+
++++ text export
+This is an error.
+
++++ tex export
+\begin{callout}
+  This is an error.
+\end{callout}

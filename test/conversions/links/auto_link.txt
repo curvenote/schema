@@ -1,0 +1,34 @@
+link with no additional text
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: 'Example: '
+      - type: text
+        marks:
+          - type: link
+            attrs:
+              href: https://example.com
+              title: null
+              kind: external
+        text: https://example.com
+      - type: text
+        text: ' is a link'
+
++++ myst
+Example: <https://example.com> is a link
+
++++ myst import
+Example: [https://example.com](https://example.com) is a link
+
++++ html
+<p>Example: <a href="https://example.com" kind="external">https://example.com</a> is a link</p>
+
++++ text export
+Example: https://example.com is a link
+
++++ tex export
+Example: \url{https://example.com} is a link

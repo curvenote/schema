@@ -1,0 +1,34 @@
+hard break
+
+--- curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: leading paragraph
+  - type: paragraph
+    content:
+      - type: hard_break
+  - type: paragraph
+    content:
+      - type: text
+        text: trailing paragraph
+
+--- myst export
+leading paragraph
+
+trailing paragraph
+
+--- html
+<p>leading paragraph</p><p><br></p><p>trailing paragraph</p>
+
+--- text export
+leading paragraph
+
+trailing paragraph
+
+--- tex export
+leading paragraph
+
+trailing paragraph

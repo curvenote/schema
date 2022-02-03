@@ -1,0 +1,51 @@
+ordered list starting at 1
+
++++ curvenote
+type: doc
+content:
+  - type: ordered_list
+    attrs:
+      order: 1
+    content:
+      - type: list_item
+        content:
+          - type: paragraph
+            content:
+              - type: text
+                text: point 1
+      - type: list_item
+        content:
+          - type: paragraph
+            content:
+              - type: text
+                text: point 2
+      - type: list_item
+        content:
+          - type: paragraph
+            content:
+              - type: text
+                text: point 3
+
++++ myst
+1. point 1
+2. point 2
+3. point 3
+
++++ html
+<ol>
+<li><p>point 1</p></li>
+<li><p>point 2</p></li>
+<li><p>point 3</p></li>
+</ol>
+
++++ text export
+1. point 1
+2. point 2
+3. point 3
+
++++ tex export
+\begin{enumerate}
+  \item point 1
+  \item point 2
+  \item point 3
+\end{enumerate}

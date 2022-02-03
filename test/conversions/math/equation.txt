@@ -1,0 +1,38 @@
+standalone equation
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: 'A line is:'
+  - type: equation
+    attrs:
+      id: null
+      label: null
+      numbered: false
+      title: ''
+    content:
+      - type: text
+        text: y = mx + b
+
++++ myst
+A line is:
+
+$$y = mx + b$$
+
++++ html
+<p>A line is:</p><r-equation>y = mx + b</r-equation>
+
++++ text export
+A line is:
+
+y = mx + b
+
++++ tex export
+A line is:
+
+\begin{equation}
+y = mx + b
+\end{equation}

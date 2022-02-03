@@ -1,0 +1,45 @@
+overlap bold/italic/subscript
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: 'strange - '
+      - type: text
+        marks:
+          - type: em
+        text: he
+      - type: text
+        marks:
+          - type: em
+          - type: strong
+        text: ll
+      - type: text
+        marks:
+          - type: em
+          - type: strong
+          - type: subscript
+        text: o
+      - type: text
+        marks:
+          - type: em
+          - type: strong
+        text: ' frie'
+      - type: text
+        marks:
+          - type: em
+        text: nd!
+
++++ myst
+strange - *he**ll{sub}`o` frie**nd!*
+
++++ html
+<p>strange - <em>he<strong>ll<sub>o</sub> frie</strong>nd!</em></p>
+
++++ text export
+strange - hello friend!
+
++++ tex export
+strange - \textit{he\textbf{ll\textsubscript{o} frie}nd!}

@@ -1,0 +1,21 @@
+symbols in paragraph
+
++++ curvenote  
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: Hello ⇔ δπ.
+
++++ myst
+Hello ⇔ δπ.
+
++++ html
+<p>Hello ⇔ δπ.</p>
+
++++ text export
+Hello ⇔ δπ.
+
++++ tex export
+Hello \Leftrightarrow $\delta\pi$.

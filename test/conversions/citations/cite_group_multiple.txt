@@ -1,0 +1,40 @@
+cite group - multiple citations
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: cite_group
+        content:
+          - type: cite
+            attrs:
+              key: SimPEG2015
+              title: ''
+              kind: cite
+              label: null
+              inline: null
+              text: ''
+          - type: cite
+            attrs:
+              key: SimPEG2016
+              title: ''
+              kind: cite
+              label: null
+              inline: null
+              text: ''
+
++++ myst export
+{cite:p}`SimPEG2015, SimPEG2016`
+
++++ html
+<p><cite-group>
+<cite key="SimPEG2015" kind="cite"></cite>
+<cite key="SimPEG2016" kind="cite"></cite>
+</cite-group></p>
+
++++ text export
+{cite:p}`SimPEG2015, SimPEG2016`
+
++++ tex export
+\citep{SimPEG2015, SimPEG2016}

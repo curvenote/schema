@@ -1,0 +1,25 @@
+underline
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: 'title:'
+      - type: text
+        marks:
+          - type: underline
+        text: hello!
+
++++ myst export
+title:{u}`hello!`
+
++++ html
+<p>title:<u>hello!</u></p>
+
++++ text export
+title:hello!
+
++++ tex export
+title:\uline{hello!}

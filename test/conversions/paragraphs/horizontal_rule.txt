@@ -1,0 +1,39 @@
+horizontal rule
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: leading paragraph
+  - type: horizontal_rule
+  - type: paragraph
+    content:
+      - type: text
+        text: trailing paragraph
+
++++ myst
+leading paragraph
+
+---
+
+trailing paragraph
+
++++ html
+<p>leading paragraph</p><hr class="break"><p>trailing paragraph</p>
+
++++ text export
+leading paragraph
+
+trailing paragraph
+
++++ tex export
+leading paragraph
+
+
+\bigskip
+\centerline{\rule{13cm}{0.4pt}}
+\bigskip
+
+trailing paragraph

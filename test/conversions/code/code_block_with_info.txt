@@ -1,0 +1,24 @@
+code block with language info
+
++++ curvenote
+type: doc
+content:
+  - type: code_block
+    attrs:
+      id: null
+      label: null
+      numbered: false
+      language: null
+      linenumbers: false
+      title: ''
+    content:
+      - type: text
+        text: |-
+          import numpy as np
+          np.array([1, 2, 3])
+
++++ myst import
+```python
+import numpy as np
+np.array([1, 2, 3])
+```

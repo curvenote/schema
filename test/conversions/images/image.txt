@@ -1,0 +1,43 @@
+inline image
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: 'This is an inline image: '
+      - type: image
+        attrs:
+          id: null
+          label: null
+          numbered: false
+          src: img.png
+          alt: x
+          title: null
+          width: 70
+          align: center
+          caption: false
+  - type: paragraph
+    content:
+      - type: text
+        text: next paragraph
+
++++ myst export
+This is an inline image: ![x](img.png)
+
+next paragraph
+
++++ html export
+<p>This is an inline image: <img src="img.png" align="center" alt="x" width="70%"></p>
+<p>next paragraph</p>
+
++++ text export
+This is an inline image: 
+
+next paragraph
+
++++ tex export
+This is an inline image: \includegraphics[width=0.7\linewidth]{img.png}
+
+next paragraph

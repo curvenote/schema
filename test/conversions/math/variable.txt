@@ -1,0 +1,23 @@
+static variable
+
++++ curvenote
+type: doc
+content:
+  - type: variable
+    attrs:
+      name: x
+      value: '1'
+      valueFunction: ''
+      format: .0f
+
++++ myst export
+```{variable}
+:name: "x"
+:value: "1"
+:format: ".0f"
+```
+
++++ html
+<r-var name="x" value="1" format=".0f"></r-var>
+
++++ text export

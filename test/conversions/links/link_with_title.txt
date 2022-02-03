@@ -1,0 +1,29 @@
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: 'This is an '
+      - type: text
+        marks:
+          - type: link
+            attrs:
+              href: https://example.com
+              title: great example
+              kind: external
+        text: example
+      - type: text
+        text: ' link'
+
++++ myst
+This is an [example](https://example.com "great example") link
+
++++ html
+<p>This is an <a href="https://example.com" title="great example" kind="external">example</a> link</p>
+
++++ text export
+This is an example link
+
++++ tex export
+This is an \href{https://example.com}{example} link

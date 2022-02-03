@@ -1,0 +1,31 @@
+indented code
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: hello!
+  - type: code_block
+    attrs:
+      id: null
+      label: null
+      numbered: false
+      language: null
+      linenumbers: false
+      title: ''
+    content:
+      - type: text
+        text: // this is code now
+        
++++ myst import
+hello!
+
+    // this is code now
+        
++++ myst export
+hello!
+```
+// this is code now
+```

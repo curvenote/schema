@@ -1,0 +1,22 @@
+datetime
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: time
+        attrs:
+          datetime: 1759-09-22T07:33:52.000Z
+
++++ myst export
+Sep 22, 1759
+
++++ html
+<p><time datetime="1759-09-22T07:33:52.000Z">Sep 22, 1759</time></p>
+
++++ text export
+Sep 22, 1759
+
++++ tex export
+Sep 22, 1759

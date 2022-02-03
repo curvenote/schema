@@ -1,0 +1,29 @@
+danger block
+
++++ curvenote
+type: doc
+content:
+  - type: callout
+    attrs:
+      kind: danger
+    content:
+      - type: paragraph
+        content:
+          - type: text
+            text: This is a danger.
+            
++++ myst
+```{danger}
+This is a danger.
+```
+
++++ html
+<aside class="callout danger"><p>This is a danger.</p></aside>
+
++++ text export
+This is a danger.
+
++++ tex export
+\begin{callout}
+  This is a danger.
+\end{callout}

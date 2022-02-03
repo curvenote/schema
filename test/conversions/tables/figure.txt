@@ -1,0 +1,155 @@
+table figure
+
++++ curvenote
+type: doc
+content:
+  - type: figure
+    attrs:
+      id: my-table
+      label: null
+      numbered: false
+      align: center
+    content:
+      - type: figcaption
+        attrs:
+          kind: table
+        content:
+          - type: text
+            text: 'This is a table '
+          - type: text
+            marks:
+              - type: em
+            text: caption
+      - type: table
+        content:
+          - type: table_row
+            content:
+              - type: table_header
+                attrs:
+                  colspan: 1
+                  rowspan: 1
+                  colwidth: null
+                  background: null
+                content:
+                  - type: paragraph
+                    content:
+                      - type: text
+                        text: Training
+              - type: table_header
+                attrs:
+                  colspan: 1
+                  rowspan: 1
+                  colwidth: null
+                  background: null
+                content:
+                  - type: paragraph
+                    content:
+                      - type: text
+                        text: Validation
+          - type: table_row
+            content:
+              - type: table_cell
+                attrs:
+                  colspan: 1
+                  rowspan: 1
+                  colwidth: null
+                  background: null
+                content:
+                  - type: paragraph
+                    content:
+                      - type: text
+                        text: '0'
+              - type: table_cell
+                attrs:
+                  colspan: 1
+                  rowspan: 1
+                  colwidth: null
+                  background: null
+                content:
+                  - type: paragraph
+                    content:
+                      - type: text
+                        text: '5'
+          - type: table_row
+            content:
+              - type: table_cell
+                attrs:
+                  colspan: 1
+                  rowspan: 1
+                  colwidth: null
+                  background: null
+                content:
+                  - type: paragraph
+                    content:
+                      - type: text
+                        text: '13720'
+              - type: table_cell
+                attrs:
+                  colspan: 1
+                  rowspan: 1
+                  colwidth: null
+                  background: null
+                content:
+                  - type: paragraph
+                    content:
+                      - type: text
+                        text: '2744'
+  - type: paragraph
+    content:
+      - type: text
+        text: trailing paragraph
+
++++ myst export
+```{list-table} This is a table *caption*
+:header-rows: 1
+:name: my-table
+
+* - Training
+  - Validation
+* - 0
+  - 5
+* - 13720
+  - 2744
+```
+
+trailing paragraph
+
++++ html
+<figure id="my-table" align="center">
+<figcaption kind="table">This is a table <em>caption</em></figcaption>
+<table><tbody>
+<tr><th><p>Training</p></th><th><p>Validation</p></th></tr>
+<tr><td><p>0</p></td><td><p>5</p></td></tr>
+<tr><td><p>13720</p></td><td><p>2744</p></td></tr>
+</tbody></table>
+</figure>
+<p>trailing paragraph</p>
+
++++ text export
+This is a table caption
+
+|  Training | Validation |
+|---|---|
+|  0 | 5 |
+|  13720 | 2744 |
+
+trailing paragraph
+
++++ tex export
+\begin{table}[!htbp]
+  \centering
+  \caption*{
+    This is a table \textit{caption}
+  }
+
+  \begin{tabular}{*{2}{c}}
+    \hline
+    Training & Validation \\
+    \hline
+    0 & 5 \\
+    13720 & 2744 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+trailing paragraph
