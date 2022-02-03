@@ -1,0 +1,25 @@
+inline code
+
++++ curvenote
+type: doc
+content:
+  - type: paragraph
+    content:
+      - type: text
+        text: 'some code: '
+      - type: text
+        marks:
+          - type: code
+        text: x == y
+
++++ myst
+some code: `x == y`
+
++++ html
+<p>some code: <code>x == y</code></p>
+
++++ text export
+some code: x == y
+
++++ tex export
+some code: \texttt{x == y}
