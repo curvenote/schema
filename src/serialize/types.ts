@@ -8,6 +8,7 @@ export enum TexFormatTypes {
 
 export interface TexStatementOptions {
   command: string;
+  commandOpts?: string;
   bracketOpts?: string;
   inline?: boolean;
   before?: string;
@@ -50,6 +51,7 @@ export interface TexSerializerState extends SharedSerializerState {
   options: TexOptions;
   nextCaptionNumbered?: boolean;
   isInTable?: boolean;
+  containsTable?: boolean;
 }
 
 export type MdFormatSerialize<S extends Schema<any, any> = any> = (
