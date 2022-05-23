@@ -84,13 +84,23 @@ const arrows: Record<string, string> = {
   '⇐': '\\Leftarrow',
 };
 
+const symbols: Record<string, string> = {
+  '−': '-', // minus
+  '-': '-', // hyphen minus
+  '﹣': '-', // Small hyphen minus
+  '－': '-', // Full-width Hyphen-minus
+  '＋': '+', // Small hyphen minus
+};
+
 const textReplacements: Record<string, string> = {
   ...textOnlyReplacements,
   ...arrows,
+  ...symbols,
 };
 
 const mathReplacements: Record<string, string> = {
   ...arrows,
+  ...symbols,
   '½': '\\frac{1}{2}',
   '⅓': '\\frac{1}{3}',
   '⅔': '\\frac{2}{3}',
