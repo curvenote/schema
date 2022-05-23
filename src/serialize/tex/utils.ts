@@ -118,6 +118,7 @@ const mathReplacements: Record<string, string> = {
   '⅞': '\\frac{7}{8}',
   '⅑': '\\frac{1}{9}',
   '⅒': '\\frac{1}{10}',
+  '±': '\\pm',
   Α: 'A',
   α: '\\alpha',
   Β: 'B',
