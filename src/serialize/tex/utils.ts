@@ -89,7 +89,7 @@ const symbols: Record<string, string> = {
   '-': '-', // hyphen minus
   '﹣': '-', // Small hyphen minus
   '－': '-', // Full-width Hyphen-minus
-  '＋': '+', // Small hyphen minus
+  '＋': '+', // Full-width Plus
 };
 
 const textReplacements: Record<string, string> = {
