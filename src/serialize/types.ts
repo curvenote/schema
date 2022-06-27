@@ -1,5 +1,5 @@
 import { MarkdownSerializerState } from 'prosemirror-markdown';
-import { Node, Schema } from 'prosemirror-model';
+import { Node } from 'prosemirror-model';
 import type { GenericNode } from 'mystjs';
 
 export enum TexFormatTypes {
@@ -17,7 +17,7 @@ export interface TexStatementOptions {
 }
 
 export interface SharedOptions {
-  tightLists?: boolean | null;
+  tightLists?: boolean | undefined;
   indent?: string;
   /**
    * Localize a reference, e.g. take an ID and create a local ID
@@ -68,16 +68,16 @@ export interface TexSerializerState extends SharedSerializerState {
   longFigure?: boolean;
 }
 
-export type MdFormatSerialize<S extends Schema<any, any> = any> = (
+export type MdFormatSerialize = (
   state: MdSerializerState,
-  node: Node<S>,
-  parent: Node<S>,
+  node: Node,
+  parent: Node,
   index: number,
 ) => void;
 
-export type TexFormatSerialize<S extends Schema<any, any> = any> = (
+export type TexFormatSerialize = (
   state: TexSerializerState,
-  node: Node<S>,
-  parent: Node<S>,
+  node: Node,
+  parent: Node,
   index: number,
 ) => void;
