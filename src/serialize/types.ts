@@ -16,7 +16,7 @@ export interface TexStatementOptions {
   after?: string;
 }
 
-export interface SharedOptions {
+export interface SharedMarkdownOptions {
   tightLists?: boolean | undefined;
   indent?: string;
   /**
@@ -31,23 +31,23 @@ export interface SharedOptions {
   localizeLink?: (src: string) => string;
 }
 
-export interface MarkdownOptions extends SharedOptions {
+export interface MarkdownOptions extends SharedMarkdownOptions {
   renderers?: {
     iframe?: 'html' | 'myst';
   };
   createMdastImportId?: () => string;
 }
 
-export interface TexOptions extends SharedOptions {
+export interface TexOptions extends SharedMarkdownOptions {
   format?: TexFormatTypes;
 }
 
-export interface MdastOptions extends SharedOptions {
+export interface MdastOptions extends SharedMarkdownOptions {
   useSchema?: string;
 }
 
 export interface SharedSerializerState extends MarkdownSerializerState {
-  options: SharedOptions;
+  options: SharedMarkdownOptions;
   delim?: string;
   nextCitationInGroup?: number;
   nextCaptionId?: string;
